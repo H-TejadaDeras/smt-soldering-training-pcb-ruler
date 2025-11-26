@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Soldering I + II Circuits")
-		(date "2025-10-17")
-		(rev "1")
+		(date "2025-11-26")
+		(rev "1.1")
 		(company "The Shop - Franklin W. Olin College of Engineering")
 		(comment 1 "Henry Tejada Deras + Emily Boyd")
 	)
@@ -3485,7 +3485,15 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
+			(property "Reference" "SW2"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PTS526SM15SMTR2 LFS"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -3493,15 +3501,7 @@
 					)
 				)
 			)
-			(property "Value" "SW_DPST"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
+			(property "Footprint" "smt_soldering_training:PTS526SM15SMTR2LFS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3670,24 +3670,6 @@
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
 					(name "1"
 						(effects
 							(font
@@ -3704,16 +3686,34 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at -5.08 -2.54 0)
 					(length 2.54)
-					(name "4"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3724,14 +3724,14 @@
 				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 2.54)
-					(name "2"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4430,6 +4430,12 @@
 		(uuid "66c4d507-e828-4c2a-9aa0-3caa93a2b5a1")
 	)
 	(junction
+		(at 78.74 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76d1183e-70a7-4908-91b3-09098abfe5b8")
+	)
+	(junction
 		(at 142.24 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4452,12 +4458,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0eb800d-cd33-4d38-86a4-39b6f1c4889a")
-	)
-	(junction
-		(at 78.74 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f99b9526-075f-4e50-8e7d-155506668148")
 	)
 	(no_connect
 		(at 215.9 161.29)
@@ -4761,16 +4761,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 71.12) (xy 78.74 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ffb44c5-9f66-4df1-afd1-b620e5e67a09")
-	)
-	(wire
-		(pts
 			(xy 90.17 133.35) (xy 90.17 135.89)
 		)
 		(stroke
@@ -4781,7 +4771,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 73.66) (xy 60.96 73.66)
+			(xy 57.15 73.66) (xy 60.96 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4838,6 +4828,16 @@
 			(type default)
 		)
 		(uuid "2fc23071-b0c2-4a85-abf6-321bd1a6aeaa")
+	)
+	(wire
+		(pts
+			(xy 78.74 71.12) (xy 78.74 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c7503a-0323-4f4d-b7e0-263ae5d209f8")
 	)
 	(wire
 		(pts
@@ -4901,7 +4901,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 96.52) (xy 138.43 96.52)
+			(xy 129.54 96.52) (xy 138.43 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4981,6 +4981,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 71.12) (xy 78.74 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "762631f9-cbc6-4ae0-90c0-558b941da874")
+	)
+	(wire
+		(pts
 			(xy 73.66 134.62) (xy 73.66 133.35)
 		)
 		(stroke
@@ -5038,16 +5048,6 @@
 			(type default)
 		)
 		(uuid "7d79f65e-d046-481f-bd1b-c9eea6c442ed")
-	)
-	(wire
-		(pts
-			(xy 77.47 71.12) (xy 78.74 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7de0b5d2-46dc-4853-b973-2966ce019ff7")
 	)
 	(wire
 		(pts
@@ -6963,7 +6963,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 135.89 96.52 90)
+		(at 129.54 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6972,7 +6972,7 @@
 		(fields_autoplaced yes)
 		(uuid "8ae83e78-224d-4f3e-9948-6f4e3ec3a69f")
 		(property "Reference" "#PWR05"
-			(at 139.7 96.52 0)
+			(at 129.54 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6981,16 +6981,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 132.08 96.5199 90)
+			(at 129.54 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 96.52 0)
+			(at 129.54 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6999,7 +6998,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 96.52 0)
+			(at 129.54 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7008,7 +7007,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 135.89 96.52 0)
+			(at 129.54 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7168,7 +7167,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 59.69 73.66 90)
+		(at 57.15 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7177,7 +7176,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e0cfa2f-3f6f-45b5-8302-a609e5b20c27")
 		(property "Reference" "#PWR011"
-			(at 63.5 73.66 0)
+			(at 57.15 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7186,16 +7185,15 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 55.88 73.6599 90)
+			(at 57.15 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 73.66 0)
+			(at 57.15 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7204,7 +7202,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 73.66 0)
+			(at 57.15 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7213,7 +7211,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 59.69 73.66 0)
+			(at 57.15 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8256,7 +8254,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 107.95 67.31 90)
+		(at 107.95 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8265,7 +8263,7 @@
 		(fields_autoplaced yes)
 		(uuid "b111685a-bb61-4a42-a098-9bd6c275b90c")
 		(property "Reference" "#PWR07"
-			(at 111.76 67.31 0)
+			(at 107.95 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8274,12 +8272,11 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 104.14 67.3099 90)
+			(at 107.95 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
